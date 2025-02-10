@@ -69,7 +69,7 @@ function link_iframe_formatter_field_formatter_view($entity_type, $entity, $fiel
       unset($link_options['url']);
       $height = $display['settings']['height'];
       $width = $display['settings']['width'];
-      $name = $item['title'];
+      $name = check_plain($item['title']);
       $src = url($item['url'], $link_options);
       $elements[$delta] = array(
         '#type' => 'markup',
