@@ -74,7 +74,7 @@ function link_iframe_formatter_field_formatter_view($entity_type, $entity, $fiel
       $elements[$delta] = array(
         '#type' => 'markup',
         '#prefix' => '<iframe height="' . $height . '" width="' . $width . '" name="' . $name . '" src="' . $src . '">',
-        '#sufix' => '</iframe>',
+        '#suffix' => '</iframe>',
       );
     }
   }
